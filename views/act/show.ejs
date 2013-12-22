@@ -1,0 +1,17 @@
+<%- include ../header %>
+<div class="col-md-10">
+  <p><a href="addact">+添加活动+</a></p>
+  <ul class="list-group">
+    <% if (locals.list){ %>
+      <% for(var i=0,l=list.length;i<l;i++){%>
+      <li class="list-group-item" ng-repeat="list in topList">
+        <a href="actedit/<%= list[i]._doc.uid %>"><%= list[i]._doc.title %></a>
+        <a href="actdel/<%= list[i]._doc.uid %>" class="btn btn-xs pull-right">删除</a>
+        <a href="actedit/<%= list[i]._doc.uid %>" class="btn btn-xs pull-right">修改</a>
+      </li>
+      <% }%>
+    <% } %>
+  </ul>
+</div>
+
+<%- include ../footer %>

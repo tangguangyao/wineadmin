@@ -1,0 +1,90 @@
+//新闻后台,新增、编辑、删除
+//有图片和无图片
+//标题、文字内容、图片内容
+new=[{
+	"title":"红酒文化",
+	"com":"adasdasdsda",
+	"pic":[]
+	},{
+	"title":"红酒文化",
+	"com":"adasdasdsda",
+	"pic":[]
+	},{
+	"title":"红酒文化",
+	"com":"adasdasdsda",
+	"pic":[]
+	}]
+
+//营销活动
+//新增、编辑、删除
+//图片、标题、说明
+//其中标题限制在12个字，说明限制在30个字
+huo=[{
+	"pic":"12121.jpg",
+	"title":"122121212",
+	"desp":"121212"
+	},{
+	"pic":"12121.jpg",
+	"title":"122121212",
+	"desp":"121212"
+	}]
+
+
+//酒品陈列和精品推荐
+//新增、编辑、删除
+//图片、标题、是否推荐
+//全部内容展现在酒品陈列栏目中，按照提交的先后顺序倒序（即最近提交的排在最上面）。选择推荐后，将进入精品推荐进行展示，按照选择推荐的先后顺序进行倒序。
+wine=[{
+	"pic":"1.jpg",
+	"title":"qwqewq",
+	"push":false
+	},{
+	"pic":"1.jpg",
+	"title":"qwqewq",
+	"push":true
+	}]
+
+//在线订购
+//订购内容（限制500字）、联系人、电话、手机、传真、地址、E-mail。其中手机为必填项
+bug=[{
+	"name":"ta",
+	"call":"12121212",
+	"phone":"12342243",
+	"fox":"1212-21121",
+	"address":"qwwwwwsqsq",
+	"email":"sasdf@gmail.com",
+	"com":"qwqwqwqww"
+	},{
+	"name":"ta",
+	"call":"12121212",
+	"phone":"12342243",
+	"fox":"1212-21121",
+	"address":"qwwwwwsqsq",
+	"email":"sasdf@gmail.com",
+	"com":"qwqwqwqww"
+	}]
+
+
+
+
+//相册
+//新增相册、编辑相册标题、删除相册、添加相册图片、删除相册图片
+pic=[{
+	"name":"picarry",
+	"obj":[{
+		"name":"pic1",
+		"pic":"1.jpg"
+		},{
+		"name":"pic1",
+		"pic":"1.jpg"
+		}]
+	},{
+	"name":"picarry",
+	"obj":[{
+		"name":"pic1",
+		"pic":"1.jpg"
+		},{
+		"name":"pic1",
+		"pic":"1.jpg"
+		}]
+	}]

@@ -1,0 +1,32 @@
+<%- include ../header %>
+<div class="col-md-10">
+  <h4>新闻总数<em id="allNum"><%= list.num %></em></h4>
+  <p><a href="adminNewShow">+添加新闻+</a></p>
+  <ul class="list-group">
+    <% if (locals.list){ %>
+      <% for(var i=0,l=list.length;i<l;i++){%>
+      <li class="list-group-item" ng-repeat="list in topList">
+        <a href="newedit/<%= list[i]._doc.uid %>"><%= list[i]._doc.title %></a>
+        <a href="newdel/<%= list[i]._doc.uid %>" class="btn btn-xs pull-right">删除</a>
+        <a href="newedit/<%= list[i]._doc.uid %>" class="btn btn-xs pull-right">修改</a>
+      </li>
+      <% }%>
+    <% } %>
+  </ul>
+  <a id="prev" style="display:none">上一页</a>
+  <a id="next" style="display:none">下一页</a>
+</div>
+
+
+<script>
+var pageAll=Number($("#allNum").text());
+var page=Number(location.search.charAt(location.search.length - 1));
+
+if(pageAll>10*(page+1)){
+  $("#next").show().attr("href","adminNew?page="+(page+1));
+}
+if(page>0){
+  $("#prev").show().attr("href","adminNew?page="+(page-1));
+}
+</script>
+<%- include ../footer %>

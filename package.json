@@ -10,5 +10,8 @@
     "ejs": "*",
     "gm": "*",
     "mongoose":"*"
+  },
+  "devDependencies": {
+    "should":"*"
   }
 }
